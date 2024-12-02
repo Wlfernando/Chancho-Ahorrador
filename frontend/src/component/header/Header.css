@@ -1,0 +1,9 @@
+.header {
+  background-color: var(--blue);
+  height: 4rem;
+  padding-inline: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr repeat(3, auto);
+  align-items: center;
+  gap: .625rem;
+}
