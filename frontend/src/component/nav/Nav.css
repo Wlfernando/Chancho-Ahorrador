@@ -1,0 +1,19 @@
+.retailer-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding-inline-start: 0;
+
+  li {
+    box-shadow: 0 5px 12px -3px rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    background-color: #F7F7F7;
+  }
+
+  a {
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+  }
+}
