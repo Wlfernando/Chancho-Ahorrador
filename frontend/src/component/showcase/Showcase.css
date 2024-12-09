@@ -12,7 +12,7 @@
     flex: 0 0 11.25rem;
     height: 17rem;
     display: grid;
-    grid-template-rows: 6.5rem 1.65rem 1.5rem .75rem 1.2rem;
+    grid-template-rows: 6.5rem 1.65rem 1.5rem .75rem 1.2rem 2.5rem;
     gap: .25rem;
     border-radius: 18px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -62,14 +62,5 @@
   .unit {
     color: black;
     font-weight: 400;
-  }
-
-  button {
-    background-color: #45CC96;
-    border-radius: 15px;
-    border-color: transparent;
-    color: white;
-    height: 2.5rem;
-    cursor: pointer;
   }
 }

@@ -1,3 +1,4 @@
+import Btn from '../Button/Btn'
 import './Showcase.css'
 
 export default function Showcase({
@@ -15,7 +16,7 @@ export default function Showcase({
             <p className='description'>{description}</p>
             <p className='brand'>{brand}</p>
             <p className='price'>&euro;{unit_price}<span className='unit'> por unidad</span></p>
-            <button>Agregar</button>
+            <Btn type='button' >Agregar</Btn>
           </li>)}
         </ul>
       </section>
