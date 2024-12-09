@@ -1,0 +1,22 @@
+.input-num {
+  flex: 1 1 50%;
+  display: flex;
+  color: var(--green);
+  gap: .5rem;
+  font-size: 1.6875rem;
+  transition: all 150ms ease-in-out;
+
+  > input {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid var(--blue);
+    outline: transparent;
+  }
+
+  > .currency {
+    font-weight: 700;
+    font-size: 2.75rem;
+  }
+}
