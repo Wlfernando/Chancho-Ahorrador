@@ -10,7 +10,7 @@ export default function Showcase({
       <section className="showcase">
         <h2>{title}</h2>
         <ul>
-          {articles.map(([name, image, alt, description, price, brand = 'Hacendado']) => <li>
+          {articles.map(([name, image, alt, description, price, brand = 'Hacendado'], i) => <li key={i}>
             <img src={image} alt={alt} />
             <h3>{name.toLowerCase()}</h3>
             <p className='description'>{description}.</p>
