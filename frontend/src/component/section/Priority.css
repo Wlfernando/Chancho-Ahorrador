@@ -11,10 +11,10 @@
     font-size: .75rem;
   }
   
-  &:has(img) {
+  &:has(> img) {
     grid-template-columns: 1fr auto;
     
-    img {
+    > img {
       width: 96px;
       height: 80px;
     }

@@ -1,8 +1,8 @@
 import './Priority.css'
 
 export default function Priority({
-  title,
-  className,
+  title = '',
+  className = '',
   children,
 }) {
   return (
