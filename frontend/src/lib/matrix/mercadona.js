@@ -52,6 +52,15 @@ const drink = [
   ["Agua mineral con gas grande Cortes", "https://prod-mercadona.imgix.net/images/acba588f5324e906a494a87166a071de.jpg?fit=crop&h=300&w=300", "Agua mineral con gas grande Cortes", "Composición química mg/L; Bicarbonatos: 279.6, Calcio: 100.7, Magnesio: 9.1, Sodio: 9.5 , Residuo seco (180C): 330, Potasio: 1.3, Sulfatos: 18.9, Fluoruros: &lt;0.10. Laboratorio Labaqua. Julio 2021", .41, "Cortes"],
 ];
 
+const milk = [
+  ["Leche semidesnatada de vaca UHT", "https://prod-mercadona.imgix.net/images/b9613b9354f8b0705f998b2201ffe443.jpg?fit=crop&h=300&w=300", "Leche semidesnatada Hacendado", "Leche semidesnatada de vaca", 4.98],
+  ["Leche semidesnatada sin lactosa Hacendado", "https://prod-mercadona.imgix.net/images/86beaab2a15ac2d9840049b9cdbd6535.jpg?fit=crop&h=300&w=300", "Leche semidesnatada sin lactosa Hacendado", "Leche semidesnatada, enzima (lactasa) y vitaminas A, D, E y ácido fólico. Origen de la leche: España", 1.72],
+  ["Leche  desnatada de vaca UHT 0% M.G", "https://prod-mercadona.imgix.net/images/40b9fc5096d638d3e3fe2c5d4f8eb1d8.jpg?fit=crop&h=300&w=300", "Leche desnatada Hacendado", "Leche desnatada de vaca", 4.74],
+  ["Leche desnatada Asturiana", "https://prod-mercadona.imgix.net/images/c7136d8bc6d7a67d220d94a1214b6634.jpg?fit=crop&h=300&w=300", "Leche desnatada", "Leche desnatada Asturiana", 1.07, "Asturiana"],
+  ["Leche entera calcio Hacendado", "https://prod-mercadona.imgix.net/images/8f436dc356b125eab8fe766f42562bc0.jpg?fit=crop&h=300&w=300", "Leche entera calcio Hacendado", "Leche entera, proteínas de la leche, sólidos lácteos ricos en calcio, estabilizante (E-451) y vitaminas A, D, E y B9 (ácido folico)", 6.72],
+  ["Bebida de avena sin azúcares añadidos Hacendado", "https://prod-mercadona.imgix.net/images/6418531f9054c82e7084945ad9febc23.jpg?fit=crop&h=300&w=300", "Bebida de avena sin azúcares añadidos Hacendado", "Agua, avena (10%), aceite de coco, maltodextrina, fosfato tricálcico (calcio), sal marina, estabilizantes (goma gellan y goma xantana) y vitaminas B2, B12 y D", 1.2],
+]
+
 export const trendStock = [
   birdMeat.at(3),
   chips.at(0),
@@ -65,6 +74,7 @@ export const lastStock = [
   chips.at(0),
   coffee.at(5),
   chips.at(2),
+  milk.at(1),
 ]
 
 const category = {
@@ -74,6 +84,7 @@ const category = {
   birdMeat,
   infusion,
   drink,
+  milk,
 };
 
 export default category
