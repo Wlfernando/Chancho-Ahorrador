@@ -1,22 +1,4 @@
 .amount {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem;
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  img {
-    width: 96px;
-    height: 80px;
-  }
-
-  > p {
-    grid-column: 1 / -1;
-    font-size: .75rem;
-  }
-
   form {
     display: flex;
     grid-column: 1 / -1;

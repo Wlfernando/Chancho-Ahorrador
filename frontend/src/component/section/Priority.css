@@ -1,0 +1,22 @@
+.priority {
+  display: grid;
+  gap: 1rem;
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  > p {
+    grid-column: 1 / -1;
+    font-size: .75rem;
+  }
+  
+  &:has(img) {
+    grid-template-columns: 1fr auto;
+    
+    img {
+      width: 96px;
+      height: 80px;
+    }
+  }
+}
