@@ -67,7 +67,7 @@ export const lastStock = [
   chips.at(2),
 ]
 
-const categories = {
+const category = {
   spices,
   chips,
   coffee,
@@ -76,4 +76,4 @@ const categories = {
   drink,
 };
 
-export default categories
+export default category
