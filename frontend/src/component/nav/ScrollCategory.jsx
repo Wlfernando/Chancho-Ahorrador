@@ -1,6 +1,5 @@
 import Priority from '../section/Priority';
 import './ScrollCategory.css';
-import mercadona from '/icon_mercadona.svg';
 import milkIcon from '/milk_icon.png';
 import drinkIcon from '/drink_icon.png';
 import meatIcon from '/meat.png';
@@ -8,6 +7,10 @@ import chipsIcon from '/chips_icon.png';
 import teaIcon from '/tea.png';
 import coffeeIcon from '/coffee.png';
 import spicesIcon from '/spices.png';
+import { useParams } from 'react-router-dom';
+import { retailerLogo } from '../../lib/const';
+import { useEffect } from 'react';
+import { useBasketContext } from '../../element/Root';
 
 const category = [
   ['milk', 'Lácteos', milkIcon],
@@ -20,10 +23,17 @@ const category = [
 ]
 
 export default function ScrollCategory() {
+  const { retailer } = useParams();
+  const { setRetailer } = useBasketContext();
+
+  useEffect(() => {
+    setRetailer(retailer)
+  }, [])
+
   return (
     <>
       <Priority title='Elige una categoría' >
-        <img src={mercadona} alt="mercadona's logo" />
+        <img src={retailerLogo[retailer]} alt="logo of retailer selected" />
         <p>Por favor elige una categoría a revisar de productos</p>
         <menu className='category' >
           {category.map(([value, name, icon]) => <li>
