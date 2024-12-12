@@ -1,0 +1,25 @@
+menu.category {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 12px;
+  grid-column: 1 / -1;
+
+  section:has(&) {
+    max-height: 17.125rem;
+  }
+
+  button {
+    background-image: radial-gradient(circle at center, var(--lg-blue) 35%, var(--blue) 40%);
+    border-radius: .75rem;
+    border-color: transparent;
+    display: grid;
+    color: white;
+    width: 5.25rem;
+    height: 6rem;
+    justify-items: center;
+    box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.7);
+  }
+}
