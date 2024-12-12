@@ -1,3 +1,4 @@
+import { useBasketContext } from '../../element/Root'
 import Btn from '../Button/Btn'
 import './Showcase.css'
 
@@ -5,6 +6,8 @@ export default function Showcase({
   title = '',
   articles = [],
 }) {
+  const { recordBasket } = useBasketContext();
+
   return (
     <>
       <section className="showcase">
@@ -16,7 +19,7 @@ export default function Showcase({
             <p className='description'>{description}.</p>
             <p className='brand'>{brand}</p>
             <p className='price'>&euro;{price.toFixed(2)}<span className='unit'> por unidad</span></p>
-            <Btn type='button' >Agregar</Btn>
+            <Btn type='button' onClick={() => recordBasket(true, [name, image, alt, description, price, brand])} >Agregar</Btn>
           </li>)}
         </ul>
       </section>
