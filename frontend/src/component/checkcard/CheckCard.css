@@ -1,0 +1,58 @@
+.check-card {
+  height: 6rem;
+  display: grid;
+  grid-template: 1fr 2.25rem 1fr / 25% 1fr 15%;
+  place-items: center start;
+  background-color: var(--gray);
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.3);
+  max-width: 31rem;
+  
+  ul:has(&) {
+    display: grid;
+    list-style: none;
+    padding-inline-start: 0;
+    row-gap: .5rem;
+  }
+
+  > img {
+    height: 100%;
+    width: 100%;
+    grid-row: 1 / -1;
+    object-fit: contain;
+  }
+
+  h3 {
+    font-size: .75rem;
+  }
+
+  > p {
+    grid-column: 2;
+  }
+
+  .description, h3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .description {
+    font-size: .625rem;
+  }
+
+  .price {
+    color: #24A300;
+    font-weight: 700;
+
+    span {
+      color: black;
+      font-weight: 400;
+    }
+  }
+
+  input {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    place-self: center;
+  }
+}
