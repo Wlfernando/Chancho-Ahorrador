@@ -18,8 +18,8 @@ const chips = [
 
 const coffee = [
   ["Café molido de tueste natural", "https://prod-mercadona.imgix.net/images/453ffbc68166e2142311cc1d5f5d4005.jpg?fit=crop&h=300&w=300", "Café molido natural fuerte Hacendado", "Café", 0.25],
-  ["Café molido de tueste natural", "https://prod-mercadona.imgix.net/images/c7bb30cc29919d10e1877219fbf12bea.jpg?fit=crop&h=300&w=300", "Café molido natural Cafés Valiente", "Café", 4, "Cafés Valiente"],
-  ["Café molido de tueste natural", "https://prod-mercadona.imgix.net/images/b40db42fc960184d8773f2ee602d23cb.jpg?fit=crop&h=300&w=300", "Café molido natural Bonka", "Café molido de tueste natural", 3, "Bonka"],
+  ["Café molido de tueste natural Valiente", "https://prod-mercadona.imgix.net/images/c7bb30cc29919d10e1877219fbf12bea.jpg?fit=crop&h=300&w=300", "Café molido natural Cafés Valiente", "Café", 4, "Cafés Valiente"],
+  ["Café molido de tueste natural Bonka", "https://prod-mercadona.imgix.net/images/b40db42fc960184d8773f2ee602d23cb.jpg?fit=crop&h=300&w=300", "Café molido natural Bonka", "Café molido de tueste natural", 3, "Bonka"],
   ["Café molido de tueste natural (80%) y torrefacto (20%)", "https://prod-mercadona.imgix.net/images/4cd907914e980e53265e3a44a49a0379.jpg?fit=crop&h=300&w=300", "Café molido mezcla Marcilla crème express", "Café y azúcar", 4.3, "Marcilla"],
   ["Café de tueste natural molido", "https://prod-mercadona.imgix.net/images/6142966016229403846714fb18bf965d.jpg?fit=crop&h=300&w=300", "Café molido natural Climent", "", 2.3, "Climent"],
   ["Café de tueste natural 50% y café torrefacto 50%", "https://prod-mercadona.imgix.net/images/a9ffe73bc07c16bf77cbdb6fc596a7f1.jpg?fit=crop&h=300&w=300", "Café en grano mezcla fuerte Hacendado", "Café y azúcar", 10.2],
@@ -28,8 +28,8 @@ const coffee = [
 const birdMeat = [
   ["Pavo a tacos", "https://prod-mercadona.imgix.net/images/2cf18e210fbb02e692b4d5af399e698d.jpg?fit=crop&h=300&w=300", "Tacos de pavo", "Pavo", 4.56, " "],
   ["Filete de pechuga", "https://prod-mercadona.imgix.net/images/39d334e9e418f0c17b8c9de9116e192d.jpg?fit=crop&h=300&w=300", "Filetes pechuga de pavo", "Pavo", 5.07, " "],
-  ["Carne de pollo", "https://prod-mercadona.imgix.net/images/602a32e5bd1f9ac56713ae753ada951e.jpg?fit=crop&h=300&w=300", "Filetes pechuga de pollo", "100% Pollo", 4.81, " "],
-  ["Carne de pollo", "https://prod-mercadona.imgix.net/images/cbb6a188df470ed02af864df8225c6e1.jpg?fit=crop&h=300&w=300", "100% Pollo", "Contramuslos de pollo deshuesados y sin piel", 3.85, " "],
+  ["Filete de pollo", "https://prod-mercadona.imgix.net/images/602a32e5bd1f9ac56713ae753ada951e.jpg?fit=crop&h=300&w=300", "Filetes pechuga de pollo", "100% Pollo", 4.81, " "],
+  ["Carne de pollo contramuslo", "https://prod-mercadona.imgix.net/images/cbb6a188df470ed02af864df8225c6e1.jpg?fit=crop&h=300&w=300", "100% Pollo", "Contramuslos de pollo deshuesados y sin piel", 3.85, " "],
   ["Carne de pollo", "https://prod-mercadona.imgix.net/images/90cecf4aedea3e14cd7309fb5e024f84.jpg?fit=crop&h=300&w=300", "Pollo", "Alas partidas de pollo", 3.12, " "],
   ["SOLOMILLO DE POLLO MARINADO Y EMPANADO", "https://prod-mercadona.imgix.net/images/b8471ff00155734a88aa6daf3589b716.jpg?fit=crop&h=300&w=300", "PREPARADO DE CARNE - Solomillo de pollo marinado (75%): solomillo de pollo 69%, agua, conservadores (E-326 y E-262), sal, antioxidantes (E-331 yE-301), fibras vegetales, dextrosa. Cobertura (25%): Rebozado (Harina de arroz, harina de garbanzo, aceite girasol, dextrosa, sal, emulgente (E-471), especias, extracto de especias y colorante caramelo natural) y encolante (agua, almidón, proteína vegetal, ajo, sal, fibra vegetal, estabilizante (E-451),espesante (E-412), conservador (E-200)).", "Filetes solomillos de pollo marinados empanados sin gluten", 3.95, " "],
 ];
