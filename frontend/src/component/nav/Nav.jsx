@@ -17,7 +17,7 @@ export default function Nav() {
         <p>Por favor elige un supermercado de donde consultar los productos</p>
         <nav>
           <ul className='retailer-list'>
-            {retailerNav.map(([link, icon, alt]) => <li>
+            {retailerNav.map(([link, icon, alt], i) => <li key={i}>
               <Link to={'/compilation/' + link}><img src={icon} alt={alt} /></Link>
             </li>)}
           </ul>
