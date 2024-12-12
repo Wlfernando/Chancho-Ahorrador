@@ -22,7 +22,9 @@ const category = [
   ['spices', 'Especias', spicesIcon],
 ]
 
-export default function ScrollCategory() {
+export default function ScrollCategory({
+  setStock,
+}) {
   const { retailer } = useParams();
   const { setRetailer } = useBasketContext();
 
@@ -36,8 +38,8 @@ export default function ScrollCategory() {
         <img src={retailerLogo[retailer]} alt="logo of retailer selected" />
         <p>Por favor elige una categoría a revisar de productos</p>
         <menu className='category' >
-          {category.map(([value, name, icon]) => <li>
-            <button type='button' value={value} >{name}<img src={icon} alt={name} /></button>
+          {category.map(([value, name, icon], i) => <li key={i}>
+            <button type='button' onClick={() => setStock(value)} >{name}<img src={icon} alt={name} /></button>
           </li>)}
         </menu>
       </Priority>
