@@ -1,0 +1,15 @@
+form menu {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  gap: 1rem;
+  max-width: 31rem;
+
+  li {
+    flex: 1 1 50%;
+
+    button {
+      width: 100%;
+    }
+  }
+}
