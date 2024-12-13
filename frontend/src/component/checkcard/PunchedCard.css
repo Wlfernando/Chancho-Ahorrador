@@ -1,0 +1,57 @@
+.punched-card {
+  display: grid;
+  grid-template: 1.85rem 1.85rem 1.85rem / 20% 1fr 15%;
+  background-color: var(--gray);
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.4);
+  align-items: center;
+
+  ul:has(&) {
+    list-style: none;
+    padding-inline-start: 0;
+    display: grid;
+    gap: .5rem;
+  }
+
+  > img {
+    width: 100%;
+    height: 100%;
+    grid-row: span 3;
+  }
+
+  h3 {
+    font-size: .75rem;
+  }
+
+  .price {
+    color: var(--green);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .discount {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    position: relative;
+    background-color: var(--green);
+    color: white;
+    text-align: end;
+    align-self: stretch;
+  }
+
+  button {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    border-color: transparent;
+    place-self: end center;
+
+    img {
+      object-position: 0 6px;
+    }
+  }
+
+  input {
+    width: 1.125rem;
+    aspect-ratio: 1;
+    place-self: center;
+  }
+}
