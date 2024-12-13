@@ -11,7 +11,7 @@ export default function Header() {
         <IconBtn hamburger onClick={() => navigate('/')} />
         <IconBtn magnifier />
         <IconBtn route onClick={() => navigate('/board/budget')} />
-        <IconBtn cart />
+        <IconBtn cart onClick={() => navigate('/basket')} />
         <IconBtn perfil />
       </header>
     </>
