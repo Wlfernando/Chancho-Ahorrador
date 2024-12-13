@@ -77,7 +77,12 @@ export const lastStock = [
   coffee.at(5),
   chips.at(2),
   milk.at(1),
-]
+];
+
+export const someOfferts = [
+  milk.at(5),
+  coffee.at(5),
+];
 
 const category = {
   spices,
