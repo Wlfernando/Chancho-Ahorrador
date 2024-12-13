@@ -1,0 +1,64 @@
+.select {
+  display: grid;
+  position: relative;
+  border: 1px solid rgb(148, 148, 148);
+  padding: 0;
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+
+  .label, ul {
+    background-color: var(--gray);
+    border-radius: 7px;
+  }
+
+  .label, label {
+    padding-inline: 1rem;
+  }
+  
+  svg {
+    height: 17px;
+    aspect-ratio: 1;
+  }
+
+  ul {
+    grid-row: 2;
+    padding: 1rem 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: .5rem;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border: 1px solid rgb(148, 148, 148);
+  }
+
+  ul[inert] {
+    visibility: hidden;
+    display: none;
+  }
+
+  li {
+    display: grid;
+  }
+
+  label {
+    padding-block: .25rem;
+    cursor: pointer;
+
+    &:has(:checked), &:hover, &:focus-within {
+      background-color: var(--chk-clr);
+      color: var(--contrast);
+    }
+  }
+
+  input {
+    appearance: none;
+  }
+}
