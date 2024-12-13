@@ -12,7 +12,7 @@ export default function Offers() {
   const { retailer, setRetailer, budgetRef, basketRef } = useBasketContext();
   const list = []
   let i = 0
-  basketRef.current.forEach((value) => i++ % 2 === 0 && list.push(value))
+  basketRef.current.forEach((value) => i++ % 3 !== 2 && list.push(value))
 
   return (
     <>
