@@ -59,7 +59,9 @@ const milk = [
   ["Leche desnatada Asturiana", "https://prod-mercadona.imgix.net/images/c7136d8bc6d7a67d220d94a1214b6634.jpg?fit=crop&h=300&w=300", "Leche desnatada", "Leche desnatada Asturiana", 1.07, "Asturiana"],
   ["Leche entera calcio Hacendado", "https://prod-mercadona.imgix.net/images/8f436dc356b125eab8fe766f42562bc0.jpg?fit=crop&h=300&w=300", "Leche entera calcio Hacendado", "Leche entera, proteínas de la leche, sólidos lácteos ricos en calcio, estabilizante (E-451) y vitaminas A, D, E y B9 (ácido folico)", 6.72],
   ["Bebida de avena sin azúcares añadidos Hacendado", "https://prod-mercadona.imgix.net/images/6418531f9054c82e7084945ad9febc23.jpg?fit=crop&h=300&w=300", "Bebida de avena sin azúcares añadidos Hacendado", "Agua, avena (10%), aceite de coco, maltodextrina, fosfato tricálcico (calcio), sal marina, estabilizantes (goma gellan y goma xantana) y vitaminas B2, B12 y D", 1.2],
-]
+];
+
+[spices, chips, coffee, birdMeat, infusion, drink, milk].forEach(table => table.forEach(row => row[4] = row[4] * 21.17))
 
 export const trendStock = [
   birdMeat.at(3),
