@@ -12,6 +12,7 @@ export default function Root() {
   const basketRef = useRef(new Map());
   const billRef = useRef(new Map());
   const budgetRef = useRef(0);
+  const [isChange, setIsChange] = useState(false);
   
   function recordBasket(check, product) {
     const basket = basketRef.current;
@@ -25,7 +26,10 @@ export default function Root() {
     const bill = billRef.current;
     
     return {
-      delete: () => bill.delete(product[0]),
+      delete: () => {
+        bill.delete(product[0]);
+        setIsChange(!isChange);
+      },
       set: (d) => bill.set(product[0], setProduct(product, d)),
     }
   }
