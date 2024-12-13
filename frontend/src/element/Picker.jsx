@@ -20,7 +20,7 @@ export default function Picker() {
         {stock && <Form>
           <menu className="board">
             <li><Btn type="button" mod="gray forward" onClick={() => navigate(-1)} >Atrás</Btn></li>
-            <li><Btn type="Button" mod="forward" /></li>
+            <li><Btn type="Button" mod="forward" onClick={() => navigate('/offers')} /></li>
           </menu>
           <ul>
             {category[stock].map((d) => <CheckCard key={d[0]} data={d} onClick={recordBasket} isChecked={basketRef.current.has(d[0])} />)}
