@@ -1,5 +1,5 @@
 import { useBasketContext } from '../../element/Root'
-import Btn from '../Button/Btn'
+import Btn from '../button/Btn.jsx'
 import IconCurrency from '../icon-currency/IconCurrency';
 import './Showcase.css'
 import iconCompany from '/icon_company.svg'
