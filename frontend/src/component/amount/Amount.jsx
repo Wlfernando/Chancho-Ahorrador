@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import './Amount.css'
 import InputNum from '../InputNum/InputNum'
-import Btn from '../Button/Btn'
+import Btn from '../button/Btn.jsx'
 import logo from '/logo.svg'
 import Priority from '../section/Priority'
 import { useBasketContext } from '../../element/Root'
