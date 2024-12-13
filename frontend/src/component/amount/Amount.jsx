@@ -6,6 +6,7 @@ import logo from '/logo.svg'
 import Priority from '../section/Priority'
 import { useBasketContext } from '../../element/Root'
 import { useState } from 'react'
+import IconCurrency from '../icon-currency/IconCurrency'
 
 export default function Amount() {
   const { budgetRef } = useBasketContext();
@@ -18,7 +19,7 @@ export default function Amount() {
         <img src={logo} alt="logo" />
         <p>Por favor ingresa el monto del que te guiaras para que podamos ayudarte a seleccionar las mejores promociones y descuentos.</p>
         <form>
-          <InputNum name='budget' symbol='€' onChange={(_, value) => setBudget(value)} value={budget} />
+          <InputNum name='budget' symbol={<IconCurrency fill='var(--green)' />} onChange={(_, value) => setBudget(value)} value={budget} />
           <Btn mod='forward' onClick={() => {
             budgetRef.current = +budget;
             navigate('../retailer');
