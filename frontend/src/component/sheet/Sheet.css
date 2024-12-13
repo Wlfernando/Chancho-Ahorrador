@@ -1,6 +1,5 @@
 .sheet {
   color: white;
-  grid-row: span 2;
   border-radius: 12px;
   box-shadow: 0 5px 7px -2px rgba(0, 0, 0, 0.3);
   padding: .75rem;
@@ -18,6 +17,14 @@
 
   &.green {
     --color: var(--green);
+  }
+
+  &.gold {
+    --color: #E4CB89;
+  }
+
+  &.orange {
+    --color: #F36A4B;
   }
 
   &.bigger-text {
