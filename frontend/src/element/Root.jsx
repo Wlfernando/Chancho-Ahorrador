@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Header from "../component/header/header";
+import Header from "../component/header/Header.jsx";
 import { createContext, useContext, useRef, useState } from "react";
 
 const BasketContext = createContext({});
