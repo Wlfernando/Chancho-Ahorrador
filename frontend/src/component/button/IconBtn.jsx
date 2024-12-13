@@ -30,10 +30,11 @@ export default function IconBtn({
   route = false,
   cart = false,
   perfil = false,
+  onClick,
 }) {
   return (
     <>
-      <button className="icon-btn">{
+      <button className="icon-btn" onClick={onClick}>{
         hamburger ? hamburgerIcon :
         magnifier ? magnifierIcon :
         route ? routeIcon :
